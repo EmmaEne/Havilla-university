@@ -1,0 +1,121 @@
+// Results for the demo student (STU-001) across semesters
+export const studentResults = [
+  {
+    semester: 'First Semester',
+    session: '2022/2023',
+    level: '100',
+    results: [
+      { courseCode: 'CSC101', courseTitle: 'Introduction to Computer Science', creditUnits: 3, score: 78, grade: 'A', gradePoint: 5.0 },
+      { courseCode: 'MTH101', courseTitle: 'Elementary Mathematics I', creditUnits: 3, score: 72, grade: 'A', gradePoint: 5.0 },
+      { courseCode: 'PHY101', courseTitle: 'General Physics I', creditUnits: 3, score: 65, grade: 'B', gradePoint: 4.0 },
+      { courseCode: 'GST101', courseTitle: 'Use of English I', creditUnits: 2, score: 70, grade: 'A', gradePoint: 5.0 },
+      { courseCode: 'GST103', courseTitle: 'Nigerian People & Culture', creditUnits: 2, score: 68, grade: 'B', gradePoint: 4.0 },
+    ],
+    gpa: 4.62,
+    totalCredits: 13,
+    totalCreditEarned: 13,
+    remark: 'Pass',
+  },
+  {
+    semester: 'Second Semester',
+    session: '2022/2023',
+    level: '100',
+    results: [
+      { courseCode: 'CSC102', courseTitle: 'Introduction to Programming', creditUnits: 3, score: 82, grade: 'A', gradePoint: 5.0 },
+      { courseCode: 'MTH102', courseTitle: 'Elementary Mathematics II', creditUnits: 3, score: 58, grade: 'C', gradePoint: 3.0 },
+      { courseCode: 'PHY102', courseTitle: 'General Physics II', creditUnits: 3, score: 62, grade: 'B', gradePoint: 4.0 },
+      { courseCode: 'GST102', courseTitle: 'Use of English II', creditUnits: 2, score: 74, grade: 'A', gradePoint: 5.0 },
+    ],
+    gpa: 4.18,
+    totalCredits: 11,
+    totalCreditEarned: 11,
+    remark: 'Pass',
+  },
+  {
+    semester: 'First Semester',
+    session: '2023/2024',
+    level: '200',
+    results: [
+      { courseCode: 'CSC201', courseTitle: 'Data Structures & Algorithms', creditUnits: 4, score: 75, grade: 'A', gradePoint: 5.0 },
+      { courseCode: 'CSC202', courseTitle: 'Object-Oriented Programming', creditUnits: 3, score: 80, grade: 'A', gradePoint: 5.0 },
+      { courseCode: 'MTH201', courseTitle: 'Mathematical Methods I', creditUnits: 3, score: 55, grade: 'C', gradePoint: 3.0 },
+      { courseCode: 'STA201', courseTitle: 'Statistics for Sciences', creditUnits: 3, score: 63, grade: 'B', gradePoint: 4.0 },
+      { courseCode: 'CSC203', courseTitle: 'Computer Architecture', creditUnits: 3, score: 71, grade: 'A', gradePoint: 5.0 },
+    ],
+    gpa: 4.44,
+    totalCredits: 16,
+    totalCreditEarned: 16,
+    remark: 'Pass',
+  },
+  {
+    semester: 'Second Semester',
+    session: '2023/2024',
+    level: '200',
+    results: [
+      { courseCode: 'CSC204', courseTitle: 'Programming Languages', creditUnits: 3, score: 68, grade: 'B', gradePoint: 4.0 },
+      { courseCode: 'CSC206', courseTitle: 'Discrete Mathematics', creditUnits: 3, score: 72, grade: 'A', gradePoint: 5.0 },
+      { courseCode: 'CSC208', courseTitle: 'Assembly Language', creditUnits: 3, score: 60, grade: 'B', gradePoint: 4.0 },
+      { courseCode: 'MTH202', courseTitle: 'Mathematical Methods II', creditUnits: 3, score: 52, grade: 'C', gradePoint: 3.0 },
+    ],
+    gpa: 4.00,
+    totalCredits: 12,
+    totalCreditEarned: 12,
+    remark: 'Pass',
+  },
+  {
+    semester: 'First Semester',
+    session: '2024/2025',
+    level: '300',
+    results: [
+      { courseCode: 'CSC301', courseTitle: 'Database Management Systems', creditUnits: 3, score: 85, grade: 'A', gradePoint: 5.0 },
+      { courseCode: 'CSC302', courseTitle: 'Operating Systems', creditUnits: 3, score: 76, grade: 'A', gradePoint: 5.0 },
+      { courseCode: 'CSC303', courseTitle: 'Software Engineering', creditUnits: 3, score: 70, grade: 'A', gradePoint: 5.0 },
+      { courseCode: 'CSC306', courseTitle: 'Web Technologies', creditUnits: 3, score: 88, grade: 'A', gradePoint: 5.0 },
+      { courseCode: 'CSC307', courseTitle: 'Human Computer Interaction', creditUnits: 2, score: 65, grade: 'B', gradePoint: 4.0 },
+    ],
+    gpa: 4.86,
+    totalCredits: 14,
+    totalCreditEarned: 14,
+    remark: 'Pass',
+  },
+];
+
+// Results data for lecturer view — all students in a course
+export const courseResults = {
+  'CSC301': {
+    courseCode: 'CSC301',
+    courseTitle: 'Database Management Systems',
+    session: '2024/2025',
+    semester: 'First Semester',
+    lecturerId: 'LEC-001',
+    status: 'Published',
+    results: Array.from({ length: 30 }, (_, i) => ({
+      studentId: `STU-${String(i + 1).padStart(3, '0')}`,
+      matricNo: `STU/2024/${String(i + 1).padStart(3, '0')}`,
+      studentName: ['Adebayo Oluwaseun', 'Chioma Adeyemi', 'Emeka Ibrahim', 'Fatima Okafor', 'Grace Balogun', 'Hassan Yusuf', 'Ifeoma Eze', 'Jamal Abdullahi', 'Kemi Nwosu', 'Ladi Mohammed', 'Musa Akinola', 'Ngozi Okoro', 'Obinna Adewale', 'Precious Garba', 'Rasheed Alabi', 'Sade Achebe', 'Tunde Osinbajo', 'Uche Musa', 'Victoria Nwosu', 'Wale Ogundipe', 'Yusuf Ekwueme', 'Zainab Adeola', 'Adaobi Chukwuma', 'Bola Babangida', 'Chidi Igwe', 'Damilola Fashola', 'Ese Obasanjo', 'Folake Dikko', 'Godwin Amaechi', 'Hadiza Soludo'][i],
+      ca1: Math.floor(Math.random() * 15) + 5,
+      ca2: Math.floor(Math.random() * 10) + 5,
+      exam: Math.floor(Math.random() * 50) + 20,
+      get total() { return this.ca1 + this.ca2 + this.exam; },
+    })),
+  },
+  'CSC302': {
+    courseCode: 'CSC302',
+    courseTitle: 'Operating Systems',
+    session: '2024/2025',
+    semester: 'First Semester',
+    lecturerId: 'LEC-002',
+    status: 'Draft',
+    results: Array.from({ length: 25 }, (_, i) => ({
+      studentId: `STU-${String(i + 1).padStart(3, '0')}`,
+      matricNo: `STU/2024/${String(i + 1).padStart(3, '0')}`,
+      studentName: ['Adebayo Oluwaseun', 'Chioma Adeyemi', 'Emeka Ibrahim', 'Fatima Okafor', 'Grace Balogun', 'Hassan Yusuf', 'Ifeoma Eze', 'Jamal Abdullahi', 'Kemi Nwosu', 'Ladi Mohammed', 'Musa Akinola', 'Ngozi Okoro', 'Obinna Adewale', 'Precious Garba', 'Rasheed Alabi', 'Sade Achebe', 'Tunde Osinbajo', 'Uche Musa', 'Victoria Nwosu', 'Wale Ogundipe', 'Yusuf Ekwueme', 'Zainab Adeola', 'Adaobi Chukwuma', 'Bola Babangida', 'Chidi Igwe'][i],
+      ca1: Math.floor(Math.random() * 15) + 5,
+      ca2: Math.floor(Math.random() * 10) + 5,
+      exam: Math.floor(Math.random() * 50) + 20,
+      get total() { return this.ca1 + this.ca2 + this.exam; },
+    })),
+  },
+};
+
+export default studentResults;
