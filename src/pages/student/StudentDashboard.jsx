@@ -41,7 +41,7 @@ export default function StudentDashboard() {
         <div className="welcome-banner glass flex justify-between items-center p-6 rounded-lg" style={{ background: 'linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%)', color: 'white' }}>
           <div>
             <span className="text-overline" style={{ color: 'var(--color-accent)' }}>Welcome Back</span>
-            <h2 className="heading-2" style={{ margin: '4px 0 8px 0' }}>{user.firstName} {user.lastName}</h2>
+            <h2 className="heading-2" style={{ margin: '4px 0 8px 0', color: 'white', fontSize: '40px' }}>{user.firstName} {user.lastName}</h2>
             <p className="text-sm" style={{ opacity: 0.85 }}>Matric No: {user.matricNo} | Programme: {user.programme} | Level: {user.level}</p>
           </div>
           <div className="flex flex-col items-end text-right" style={{ borderLeft: '1px solid rgba(255,255,255,0.15)', paddingLeft: '24px' }}>
